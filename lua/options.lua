@@ -71,4 +71,25 @@ vim.o.scrolloff = 10
 -- See `:help 'confirm'`
 vim.o.confirm = true
 
+-- [[Custom Options]]
+
+vim.o.shell = '/bin/bash'
+vim.o.shellcmdflag = '-c'
+
+vim.o.title = true
+vim.o.titlestring = vim.fn.fnamemodify(vim.fn.getcwd(), ':t') .. ' - Neovim'
+
+vim.o.sidescroll = 1
+vim.o.sidescrolloff = 5
+
+vim.o.tabstop = 2 -- A tab character is equal to 2 spaces
+vim.o.shiftwidth = 2 -- Indent levels are 2 spaces wide
+vim.o.expandtab = true -- Convert tabs to spaces
+vim.o.smartindent = true
+
+vim.o.foldmethod = 'indent'
+vim.o.foldlevel = 99 -- Start with all folds open
+
+vim.o.termguicolors = true
+
 -- vim: ts=2 sts=2 sw=2 et

@@ -37,4 +37,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- [[Custom Keymaps]]
+
+vim.keymap.set('', '<S-ScrollWheelUp>', 'zH', { desc = 'Left scroll' })
+vim.keymap.set('', '<S-ScrollWheelDown>', 'zL', { desc = 'Right scroll' })
+
 -- vim: ts=2 sts=2 sw=2 et

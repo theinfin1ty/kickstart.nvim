@@ -1,3 +1,5 @@
+if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+
 return {
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',

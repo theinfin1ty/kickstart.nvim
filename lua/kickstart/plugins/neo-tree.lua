@@ -21,5 +21,6 @@ return {
         },
       },
     },
+    enable_git_status = true,
   },
 }

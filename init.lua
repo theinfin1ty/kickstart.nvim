@@ -84,6 +84,10 @@ I hope you enjoy your Neovim journey,
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
+vim.env.PATH = vim.env.PATH .. ':/home/infin1ty/.nvm/versions/node/v20.10.0/bin'
+
+vim.g.node_host_prog = '/home/infin1ty/.nvm/versions/node/v20.10.0/bin/node'
+
 -- Set <space> as the leader key
 -- See `:help mapleader`
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
