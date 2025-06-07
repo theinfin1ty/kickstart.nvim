@@ -6,17 +6,15 @@ return {
     version = '*',
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
-      require('bufferline').setup {}
-    end,
-  },
-  {
-    'nvimdev/dashboard-nvim',
-    event = 'VimEnter',
-    config = function()
-      require('dashboard').setup {
-        -- config
+      require('bufferline').setup {
+        options = {
+          hover = {
+            enabled = true,
+            delay = 200,
+            reveal = {'close'}
+          },
+        }
       }
     end,
-    dependencies = { { 'nvim-tree/nvim-web-devicons' } },
   },
 }

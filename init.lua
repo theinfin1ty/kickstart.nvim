@@ -97,6 +97,13 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+vim.cmd([[
+  highlight DiagnosticUnderlineError gui=underline guisp=Red
+  highlight DiagnosticUnderlineWarn gui=underline guisp=Yellow
+  highlight DiagnosticUnderlineInfo gui=underline guisp=Blue
+  highlight DiagnosticUnderlineHint gui=underline guisp=Grey
+]])
+
 -- [[ Setting options ]]
 require 'options'
 
