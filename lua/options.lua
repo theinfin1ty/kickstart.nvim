@@ -86,9 +86,23 @@ vim.o.tabstop = 2 -- A tab character is equal to 2 spaces
 vim.o.shiftwidth = 2 -- Indent levels are 2 spaces wide
 vim.o.expandtab = true -- Convert tabs to spaces
 vim.o.smartindent = true
+vim.o.wrap = false -- Don't wrap lines
 
-vim.o.foldmethod = 'indent'
+vim.o.swapfile = false -- Don't use swap files
+
+-- vim.o.foldcolumn = "1" 
 vim.o.foldlevel = 99 -- Start with all folds open
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+-- vim.o.foldmethod = 'indent'
+
+vim.opt.fillchars = {
+  foldopen = "", -- or "v"
+  foldclose = "", -- or ">"
+  fold = " ",      -- remove ugly dashes
+  foldsep = " ",
+  eob = " ",       -- remove ~ from end of buffer
+}
 
 vim.o.termguicolors = true
 

@@ -84,9 +84,8 @@ I hope you enjoy your Neovim journey,
 P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
-vim.env.PATH = vim.env.PATH .. ':/home/infin1ty/.nvm/versions/node/v20.10.0/bin'
-
-vim.g.node_host_prog = '/home/infin1ty/.nvm/versions/node/v20.10.0/bin/node'
+-- Ensure NVM node is used in all Neovim contexts
+vim.env.PATH = os.getenv('HOME') .. '/.nvm/versions/node/v20.10.0/bin:' .. vim.env.PATH
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -97,12 +96,12 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
-vim.cmd([[
+vim.cmd [[
   highlight DiagnosticUnderlineError gui=underline guisp=Red
   highlight DiagnosticUnderlineWarn gui=underline guisp=Yellow
   highlight DiagnosticUnderlineInfo gui=underline guisp=Blue
   highlight DiagnosticUnderlineHint gui=underline guisp=Grey
-]])
+]]
 
 -- [[ Setting options ]]
 require 'options'
